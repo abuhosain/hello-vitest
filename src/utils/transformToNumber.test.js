@@ -1,5 +1,5 @@
 import {it, expect} from 'vitest';
-import { transformToNumber } from './transformToNumber';
+import { transformToNumber } from '../transformToNumber';
 
 it("should return a number if a numeric string is provided", () => {
     // Arrange

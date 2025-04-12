@@ -1,5 +1,5 @@
 import {it, expect} from 'vitest';
-import { add } from './math';
+import { add } from '../math';
 
 it('should return the courrect sum if an array of number is provided', () => {
     // Arrange
