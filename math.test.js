@@ -29,3 +29,14 @@ it('should return the courrect sum if an array numeric string is provided ', () 
     // Assertion
     expect(result).toBe(expectedResult);
 });
+
+it('should throw an error if no argument id passed ', () => {
+    const resultFn = () => add();
+   expect(resultFn).toThrow();
+});
+
+it('should throw an error if multiple argument is provided ', () => {
+    const resultFn = () => add(1,2,3);
+   expect(resultFn).toThrow(/is not iterable/);
+});
+
