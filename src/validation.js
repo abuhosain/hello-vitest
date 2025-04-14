@@ -5,4 +5,8 @@ export function validateEmail(email) {
     }
 };
 
-  
+export function validateArrayNotEmpty (array) {
+    if (!Array.isArray(array) || array.length === 0) {
+        throw new Error("Array cannot be empty.");
+    }
+};
