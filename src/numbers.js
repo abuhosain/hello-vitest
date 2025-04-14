@@ -1,6 +1,6 @@
 import { transformToNumber } from "./transformToNumber";
 
-function validateStringNotEmpty(value) {
+export function validateStringNotEmpty(value) {
     if (value.trim().length === 0) {
         throw new Error("Value cannot be empty or whitespace.");
     }
